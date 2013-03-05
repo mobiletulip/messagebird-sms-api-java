@@ -2,7 +2,7 @@
   =======================================================================
    File:     Example.java
    Created:  2010-01-10
-   Author:   SMScity International B.V.
+   Author:   MessageBird B.V.
    Version:  v1.1 - 2010-07-09
 
    For more information visit http://www.messagebird.com/content/api
