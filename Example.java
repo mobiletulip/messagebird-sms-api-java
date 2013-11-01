@@ -32,7 +32,6 @@ public class Example {
 
         System.out.println(smsApi.getResponseCode());       //print out the response code
         System.out.println(smsApi.getResponseMessage());    //print out the response message
-        System.out.println(smsApi.getCreditBalance());      //print out the credit balance
     }
 
 }

@@ -48,7 +48,6 @@ public class MessageBirdApi {
     private String reference;
     private String responseMessage;
     private String responseCode;
-    private String creditBalance;
 
     /**
      * Creates an instance of the MessageBird API
@@ -121,10 +120,6 @@ public class MessageBirdApi {
                         } else if (element.getName().toString().equals("responseMessage")) {
                             event = reader.nextEvent();
                             this.responseMessage = event.asCharacters().getData();
-                            continue;
-                        } else if (element.getName().toString().equals("credits")) {
-                            event = reader.nextEvent();
-                            this.creditBalance = event.asCharacters().getData();
                             continue;
                         }
                     }
@@ -242,14 +237,5 @@ public class MessageBirdApi {
      */
     public String getResponseMessage() {
         return this.responseMessage;
-    }
-
-    /**
-     * Will return the current credit balance left after sending the messages.
-     *
-     * @return creditBalance
-     */
-    public String getCreditBalance() {
-        return this.creditBalance;
     }
 }
