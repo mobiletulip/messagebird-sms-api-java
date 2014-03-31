@@ -52,7 +52,7 @@ public class MessageBirdApi {
     /**
      * Creates an instance of the MessageBird API
      */
-    public SmsCityApi() {
+    public MessageBirdApi() {
         this.destinations = new ArrayList<String>();
         this.responseType = "XML";
     }
